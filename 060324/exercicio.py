@@ -7,12 +7,12 @@ def valor_string(string):
     return valor
 
 mod = 9
-tabelahash = [[0]] * mod
+tabelahash = [[]] * mod
 
-for index, nome in enumerate(NOMES, start=0):
+for index, nome in enumerate(NOMES, start=1):
     valor = valor_string(nome)
     resultado = valor % mod
-    tabelahash[resultado].append((valor, nome))
+    tabelahash[resultado].append((index, nome))
 
 def printtabela(tabela):
     for index, item in enumerate(tabela, start=0):
