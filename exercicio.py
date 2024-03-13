@@ -16,7 +16,7 @@ for index, nome in enumerate(NOMES, start=0):
 
 def printtabela(tabela):
     for index, item in enumerate(tabela, start=0):
-        with open('060324//resultado.txt', 'a', encoding='utf-8') as file:
+        with open('060324//resultado.txt', 'w', encoding='utf-8') as file:
             file.write('Posição ' + str(index) + ':')
             file.write(str(item))
 
